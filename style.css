@@ -216,6 +216,7 @@ nav a {
   /* flex: 1; */
   border: solid 1px #cbd5e1;
   border-radius: 20px;
+  position: relative;
 }
 
 .hero-box-banner .mac-tolbar {
@@ -262,6 +263,19 @@ nav a {
   transform: translateX(-50%);
   transform: translateY(-50%);
   cursor: pointer;
+}
+
+.pluse-icons-container {
+  right: 0;
+  bottom: -44px;
+  transform: translate(54px);
+  /* transform: translatex(44px); */
+  position: absolute;
+  font-weight: 400;
+  display: flex;
+  gap: 24px;
+  z-index: -1;
+  color: #ddd;
 }
 
 .modal {
@@ -372,5 +386,8 @@ nav a {
 
   .hero-box-banner .hero-banner .play-btn {
     width: 44px;
+  }
+  .pluse-icons-container {
+    display: none;
   }
 }
