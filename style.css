@@ -380,7 +380,8 @@ nav a {
 }
 
 .about-us .about-us-content h2,
-.tools-section .tools-section-content h2 {
+.tools-section .tools-section-content h2,
+.subscribe-section h2 {
   font-size: 56px;
 }
 
@@ -409,7 +410,7 @@ nav a {
 
 #radar {
   width: 500px;
-  height: 500px;
+  height: 300px;
 }
 
 #radar canvas {
@@ -419,17 +420,16 @@ nav a {
 /* workflow section */
 
 .workflow-section {
-  margin-top: -120px;
   background-image: linear-gradient(to bottom, #581c87bf),
     url("assets/images/workflow.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  width: 1200px;
+  margin: 0px auto;
   height: 400px;
   border-radius: 30px;
   display: flex;
   padding: 0px 44px;
-  position: relative;
 }
 
 .workflow-section .workflow-section-content,
@@ -488,6 +488,62 @@ nav a {
   rotate: 180deg;
 }
 
+/* improve section */
+
+.connected-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 16px;
+}
+
+.connected-buttons button {
+  padding: 16px;
+  border: 1px solid #cbd5e1;
+  background-color: var(--surface);
+}
+
+.connected-buttons button:hover {
+  background-color: #f1f5f9;
+}
+
+.connected-buttons .first {
+  background-color: #f1f5f9;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.connected-buttons .last {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* subscribe section */
+
+.subscribe-section {
+  border-radius: 30px;
+  padding: 80px;
+  background: linear-gradient(
+    to right,
+    #312e81 0%,
+    #1e40af 33%,
+    #1e3a8a 66%,
+    #701a75 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.subscribe-section * {
+  color: white;
+}
+
+.subscribe-section p {
+  text-align: center;
+}
+
 @media screen and (max-width: 1275px) {
   .hero-box .hero-box-content .box-content h1 {
     font-size: 54px;
@@ -495,8 +551,10 @@ nav a {
   .hero-box .hero-box-content .social-icons {
     font-size: 14px;
   }
-  .workflow-section {
+  .workflow-section,
+  .subscribe-section {
     border-radius: 0px;
+    width: 100%;
   }
 }
 
@@ -516,7 +574,8 @@ nav a {
   }
 
   .about-us .about-us-content h2,
-  .tools-section .tools-section-content h2 {
+  .tools-section .tools-section-content h2,
+  .subscribe-section h2 {
     font-size: 54px;
   }
 
@@ -543,6 +602,9 @@ nav a {
   .workflow-section .workflow-section-content h2 {
     font-size: 40px;
   }
+  .tools-section {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 910px) {
@@ -561,6 +623,17 @@ nav a {
   }
   .about-us-carousel img {
     width: 160px;
+  }
+  .subscribe-section h2 {
+    text-align: center;
+    font-family: 24px;
+  }
+  .subscribe-section button {
+    padding: 24px;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
   }
 }
 
@@ -589,8 +662,13 @@ nav a {
 
   .hero-box,
   .about-us,
-  .tools-section {
+  .tools-section,
+  .subscribe-section {
     padding: 32px;
+  }
+
+  .workflow-section {
+    margin-top: 0px;
   }
 
   .hero-box .hero-box-content .box-content h1 {
@@ -630,5 +708,8 @@ nav a {
   }
   .workflow-section .workflow-section-content p {
     font-size: 14px;
+  }
+  .connected-buttons {
+    margin-top: 12px;
   }
 }
