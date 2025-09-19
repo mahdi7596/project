@@ -39,6 +39,20 @@ button {
   outline: none;
 }
 
+h1,
+h2,
+h3 {
+  color: #0f172a;
+  font-weight: bold;
+}
+
+.hero-box .hero-box-content .box-content p,
+.about-us .about-us-content p {
+  font-size: 18px;
+  color: var(--ligthNeutral);
+  font-weight: 400;
+}
+
 /* buttons */
 
 .btn-primary {
@@ -57,6 +71,12 @@ button {
   background-color: transparent;
   border: none;
   color: var(--primary);
+  transition: 0.5s ease;
+}
+
+.btn-ghost:hover {
+  background-color: #2563eb30;
+  border-radius: 8px;
 }
 
 .btn-xl {
@@ -119,6 +139,11 @@ nav a {
   width: 18px;
 }
 
+.icon-primary-btn:hover img {
+  transform: translateX(-3px);
+  transition: linear 0.1s;
+}
+
 .nav-button-holder {
   display: flex;
   align-items: center;
@@ -154,12 +179,6 @@ nav a {
   color: var(--neutral);
   font-weight: bold;
   font-size: 72px;
-}
-
-.hero-box .hero-box-content .box-content p {
-  font-size: 18px;
-  color: var(--ligthNeutral);
-  font-weight: 400;
 }
 
 .mail-social-icons-container {
@@ -308,6 +327,29 @@ nav a {
 
 .close:hover {
   color: #000;
+}
+
+/* about us section */
+
+.about-us {
+  display: flex;
+  padding: 80px;
+  gap: 32px;
+}
+
+.about-us .about-us-content,
+.about-us .about-us-carousel {
+  width: 50%;
+}
+
+.about-us .about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-us .about-us-content h2 {
+  font-size: 56px;
 }
 
 @media screen and (max-width: 1275px) {
