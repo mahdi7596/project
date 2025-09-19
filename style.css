@@ -47,7 +47,8 @@ h3 {
 }
 
 .hero-box .hero-box-content .box-content p,
-.about-us .about-us-content p {
+.about-us .about-us-content p,
+.tools-section .tools-section-content p {
   font-size: 18px;
   color: var(--ligthNeutral);
   font-weight: 400;
@@ -378,8 +379,41 @@ nav a {
   gap: 24px;
 }
 
-.about-us .about-us-content h2 {
+.about-us .about-us-content h2,
+.tools-section .tools-section-content h2 {
   font-size: 56px;
+}
+
+/* tools section */
+
+.tools-section {
+  display: flex;
+  padding: 80px;
+}
+
+.tools-section .tools-section-content {
+  width: 50%;
+}
+
+.tools-section .tools-section-content .content-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tools-section .tools-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+#radar {
+  width: 500px;
+  height: 500px;
+}
+
+#radar canvas {
+  top: -77px !important;
 }
 
 @media screen and (max-width: 1275px) {
@@ -392,7 +426,8 @@ nav a {
 }
 
 @media screen and (max-width: 1200px) {
-  .hero-box {
+  .hero-box,
+  .tools-section {
     flex-direction: column;
   }
 
@@ -405,7 +440,8 @@ nav a {
     flex-direction: column-reverse;
   }
 
-  .about-us .about-us-content h2 {
+  .about-us .about-us-content h2,
+  .tools-section .tools-section-content h2 {
     font-size: 54px;
   }
 
@@ -416,6 +452,9 @@ nav a {
   .about-us .about-us-carousel {
     width: 100%;
     justify-content: center;
+  }
+  .tools-section .tools-section-content {
+    width: 100%;
   }
 }
 
@@ -462,7 +501,8 @@ nav a {
   }
 
   .hero-box,
-  .about-us {
+  .about-us,
+  .tools-section {
     padding: 32px;
   }
 
