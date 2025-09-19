@@ -134,7 +134,7 @@ nav a {
   padding: 80px;
 }
 
-.hero-box-right {
+.hero-box-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -146,35 +146,58 @@ nav a {
   gap: 8px;
 }
 
-.hero-box .hero-box-right .hero-box-content h1 {
+.hero-box .hero-box-content .hero-box-content h1 {
   color: var(--neutral);
   font-weight: bold;
   font-size: 72px;
 }
 
-.hero-box .hero-box-right .hero-box-content p {
+.hero-box .hero-box-content .hero-box-content p {
   font-size: 18px;
   color: var(--ligthNeutral);
   font-weight: 400;
 }
 
-.hero-box .hero-box-right .mail {
+.hero-box .hero-box-content .mail {
   display: flex;
   justify-content: space-between;
   gap: 16px;
 }
 
-.hero-box .hero-box-right .email-input {
+.hero-box .hero-box-content .email-input {
   position: relative;
   flex: 1;
 }
 
-.hero-box .hero-box-right .email-input img {
+.hero-box .hero-box-content .email-input img {
   width: 20px;
   position: absolute;
   top: 50%;
   transform: translateY(-55%);
   left: 8px;
+}
+
+.social-icons {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #f1f5f9;
+  padding: 16px;
+  border-radius: 8px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+.social-icons span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social-icons span img {
+  width: 32px;
 }
 
 @media screen and (max-width: 910px) {
