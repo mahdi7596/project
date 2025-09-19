@@ -130,32 +130,42 @@ nav a {
 .hero-box {
   display: flex;
   gap: 16px;
-  align-items: center;
+  /* align-items: center; */
   padding: 80px;
 }
+
+/* hero-box-content */
 
 .hero-box-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  /* height: 100%; */
   gap: 24px;
 }
 
-.hero-box .hero-box-content {
+.hero-box .hero-box-content .box-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.hero-box .hero-box-content .hero-box-content h1 {
+.hero-box .hero-box-content .box-content h1 {
   color: var(--neutral);
   font-weight: bold;
   font-size: 72px;
 }
 
-.hero-box .hero-box-content .hero-box-content p {
+.hero-box .hero-box-content .box-content p {
   font-size: 18px;
   color: var(--ligthNeutral);
   font-weight: 400;
+}
+
+.mail-social-icons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .hero-box .hero-box-content .mail {
@@ -177,7 +187,7 @@ nav a {
   left: 8px;
 }
 
-.social-icons {
+.hero-box .hero-box-content .social-icons {
   font-size: 18px;
   font-weight: 700;
   background-color: #f1f5f9;
@@ -190,14 +200,67 @@ nav a {
   gap: 8px;
 }
 
-.social-icons span {
+.hero-box .hero-box-content .social-icons span {
   display: flex;
   align-items: center;
   gap: 6px;
 }
 
-.social-icons span img {
+.hero-box .hero-box-content .social-icons span img {
   width: 32px;
+}
+
+/* hero-box-banner */
+
+.hero-box-banner {
+  /* flex: 1; */
+  border: solid 1px #cbd5e1;
+  border-radius: 20px;
+}
+
+.hero-box-banner .mac-tolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+}
+
+.hero-box-banner .mac-tolbar .dotss {
+  display: flex;
+  align-items: center;
+}
+
+.hero-box-banner .mac-tolbar .dotss img {
+  width: 16px;
+}
+
+/* .hero-box-banner .mac-tolbar p {
+} */
+
+.hero-box-banner .mac-tolbar .arrows img {
+  width: 16px;
+}
+
+.hero-box .hero-box-banner .hero-banner {
+  position: relative;
+  /* background-color: red; */
+  height: 399px;
+}
+
+.hero-box-banner .hero-banner .banner {
+  width: 600px;
+  height: 100%;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.hero-box-banner .hero-banner .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width: 910px) {
