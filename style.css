@@ -1,6 +1,9 @@
 :root {
   --primary: #2563eb;
+  --primaryLight: #2563eb90;
   --neutral: #0f172a;
+  --surface: #fff;
+  --surfaceBorder: #e2e8f0;
 }
 
 *,
@@ -30,13 +33,47 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+/* buttons */
+
+.btn-primary {
+  background-color: var(--primary);
+  border: solid 1px var(--primary);
+  border-radius: 8px;
+  color: var(--surface);
+  transition: 0.5s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primaryLight);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: none;
+  color: var(--primary);
+}
+
+.btn-xl {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px;
+}
+
 /* header section */
 
 header {
+  border-bottom: solid 1px var(--surfaceBorder);
+}
+
+.header {
   display: flex;
   align-items: center;
   padding: 24px 16px;
-  /* background-color: brown; */
 }
 
 .text-logo {
@@ -64,4 +101,27 @@ nav a {
 .nav-arrow {
   width: 18px;
   rotate: 90deg;
+}
+
+.nav-primary-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.nav-primary-btn img {
+  rotate: 180deg;
+  width: 18px;
+}
+
+.nav-button-holder {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .text-logo {
+    display: none;
+  }
 }
