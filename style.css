@@ -334,7 +334,37 @@ nav a {
 .about-us {
   display: flex;
   padding: 80px;
-  gap: 32px;
+  gap: 56px;
+}
+
+.about-us .about-us-carousel {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.about-us .about-us-carousel .pluse-icons-container-carousel {
+  left: -60px;
+  bottom: 50%;
+  /* transform: translate(54px); */
+  /* transform: translatex(44px); */
+  position: absolute;
+  font-weight: 400;
+  display: flex;
+  gap: 24px;
+  z-index: -1;
+  color: #ddd;
+}
+
+.about-us-carousel img {
+  width: 180px;
+  height: 380px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-us-carousel .middle-carousel {
+  transform: translateY(-44px);
 }
 
 .about-us .about-us-content,
@@ -365,9 +395,27 @@ nav a {
   .hero-box {
     flex-direction: column;
   }
+
   .hero-box-banner .hero-banner .banner {
     width: 100%;
     object-fit: cover;
+  }
+
+  .about-us {
+    flex-direction: column-reverse;
+  }
+
+  .about-us .about-us-content h2 {
+    font-size: 54px;
+  }
+
+  .about-us .about-us-content {
+    width: 100%;
+  }
+
+  .about-us .about-us-carousel {
+    width: 100%;
+    justify-content: center;
   }
 }
 
@@ -381,6 +429,12 @@ nav a {
   }
   nav a {
     font-size: 14px;
+  }
+  .about-us .about-us-carousel {
+    width: 100%;
+  }
+  .about-us-carousel img {
+    width: 160px;
   }
 }
 
@@ -407,7 +461,8 @@ nav a {
     width: 24px;
   }
 
-  .hero-box {
+  .hero-box,
+  .about-us {
     padding: 32px;
   }
 
@@ -429,7 +484,18 @@ nav a {
   .hero-box-banner .hero-banner .play-btn {
     width: 44px;
   }
+
   .pluse-icons-container {
     display: none;
+  }
+
+  .about-us-carousel img {
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-us-carousel img {
+    width: 100px;
   }
 }
