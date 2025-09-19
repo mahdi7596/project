@@ -1,0 +1,67 @@
+:root {
+  --primary: #2563eb;
+  --neutral: #0f172a;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Roboto";
+  font-weight: bold;
+}
+
+/* common classes */
+
+.landing-container {
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header section */
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 24px 16px;
+  /* background-color: brown; */
+}
+
+.text-logo {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  column-gap: 12px;
+  /* background: orange; */
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral);
+  display: flex;
+  align-items: center;
+  column-gap: 2px;
+}
+
+.nav-arrow {
+  width: 18px;
+  rotate: 90deg;
+}
