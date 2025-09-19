@@ -2,6 +2,7 @@
   --primary: #2563eb;
   --primaryLight: #2563eb90;
   --neutral: #0f172a;
+  --ligthNeutral: #475569;
   --surface: #fff;
   --surfaceBorder: #e2e8f0;
 }
@@ -107,13 +108,13 @@ nav a {
   rotate: 90deg;
 }
 
-.nav-primary-btn {
+.icon-primary-btn {
   display: flex;
   align-items: center;
   column-gap: 4px;
 }
 
-.nav-primary-btn img {
+.icon-primary-btn img {
   rotate: 180deg;
   width: 18px;
 }
@@ -122,6 +123,58 @@ nav a {
   display: flex;
   align-items: center;
   column-gap: 4px;
+}
+
+/* hero-box */
+
+.hero-box {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 80px;
+}
+
+.hero-box-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-box .hero-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-box .hero-box-right .hero-box-content h1 {
+  color: var(--neutral);
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.hero-box .hero-box-right .hero-box-content p {
+  font-size: 18px;
+  color: var(--ligthNeutral);
+  font-weight: 400;
+}
+
+.hero-box .hero-box-right .mail {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.hero-box .hero-box-right .email-input {
+  position: relative;
+  flex: 1;
+}
+
+.hero-box .hero-box-right .email-input img {
+  width: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  left: 8px;
 }
 
 @media screen and (max-width: 910px) {
