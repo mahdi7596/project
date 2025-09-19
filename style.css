@@ -544,6 +544,38 @@ nav a {
   text-align: center;
 }
 
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 64px 0px;
+  flex-wrap: wrap;
+}
+
+footer .copyright {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer p {
+  font-weight: bold;
+  color: var(--neutral);
+  font-size: 18px;
+}
+
+footer span {
+  font-weight: 100 !important;
+}
+
+footer .footer-items a {
+  color: var(--ligthNeutral);
+  font-weight: 400 !important;
+  margin-left: 4px;
+}
+
 @media screen and (max-width: 1275px) {
   .hero-box .hero-box-content .box-content h1 {
     font-size: 54px;
@@ -555,6 +587,9 @@ nav a {
   .subscribe-section {
     border-radius: 0px;
     width: 100%;
+  }
+  footer {
+    padding: 32px 16px;
   }
 }
 
@@ -696,6 +731,9 @@ nav a {
 
   .about-us-carousel img {
     width: 130px;
+  }
+  footer {
+    gap: 24px;
   }
 }
 
