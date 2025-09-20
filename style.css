@@ -122,6 +122,11 @@ nav a {
   display: flex;
   align-items: center;
   column-gap: 2px;
+  transition: color 0.3s ease-in;
+}
+
+nav a:hover {
+  color: var(--primary);
 }
 
 .nav-arrow {
