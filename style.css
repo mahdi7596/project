@@ -125,7 +125,8 @@ nav a {
   transition: color 0.3s ease-in;
 }
 
-nav a:hover {
+nav a:hover,
+footer .footer-items a:hover {
   color: var(--primary);
 }
 
