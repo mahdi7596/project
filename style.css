@@ -385,9 +385,7 @@ footer .footer-items a:hover {
   gap: 24px;
 }
 
-.about-us .about-us-content h2,
-.tools-section .tools-section-content h2,
-.subscribe-section h2 {
+.heading-xl {
   font-size: 56px;
 }
 
@@ -465,10 +463,6 @@ footer .footer-items a:hover {
   color: var(--surface);
 }
 
-.workflow-section .workflow-section-content h2 {
-  font-size: 56px;
-}
-
 .workflow-section .workflow-section-content p {
   font-size: 18px;
   font-weight: 400;
@@ -499,7 +493,7 @@ footer .footer-items a:hover {
 .connected-buttons {
   display: grid;
   grid-template-columns: auto auto auto;
-  margin-bottom: 16px;
+  margin: 16px 0px;
 }
 
 .connected-buttons button {
@@ -583,17 +577,16 @@ footer .footer-items a {
 }
 
 @media screen and (max-width: 1275px) {
-  .hero-box .hero-box-content .box-content h1 {
-    font-size: 54px;
-  }
   .hero-box .hero-box-content .social-icons {
     font-size: 14px;
   }
+
   .workflow-section,
   .subscribe-section {
     border-radius: 0px;
     width: 100%;
   }
+
   footer {
     padding: 32px 16px;
   }
@@ -612,12 +605,6 @@ footer .footer-items a {
 
   .about-us {
     flex-direction: column-reverse;
-  }
-
-  .about-us .about-us-content h2,
-  .tools-section .tools-section-content h2,
-  .subscribe-section h2 {
-    font-size: 54px;
   }
 
   .about-us .about-us-content {
@@ -640,9 +627,6 @@ footer .footer-items a {
     display: none;
   }
 
-  .workflow-section .workflow-section-content h2 {
-    font-size: 40px;
-  }
   .tools-section {
     display: none;
   }
@@ -665,9 +649,10 @@ footer .footer-items a {
   .about-us-carousel img {
     width: 160px;
   }
-  .subscribe-section h2 {
-    text-align: center;
-    font-family: 24px;
+
+  .heading-xl,
+  .hero-box .hero-box-content .box-content h1 {
+    font-size: 40px;
   }
   .subscribe-section button {
     padding: 24px;
@@ -682,6 +667,7 @@ footer .footer-items a {
   nav {
     display: none;
   }
+
   .header {
     justify-content: space-between;
   }
@@ -712,10 +698,6 @@ footer .footer-items a {
     margin-top: 0px;
   }
 
-  .hero-box .hero-box-content .box-content h1 {
-    font-size: 40px;
-  }
-
   .hero-box .hero-box-content .social-icons {
     flex-wrap: wrap;
     font-size: 22px;
@@ -738,6 +720,7 @@ footer .footer-items a {
   .about-us-carousel img {
     width: 130px;
   }
+
   footer {
     gap: 24px;
   }
@@ -747,12 +730,11 @@ footer .footer-items a {
   .about-us-carousel img {
     width: 100px;
   }
-  .workflow-section .workflow-section-content h2 {
-    font-size: 32px;
-  }
+
   .workflow-section .workflow-section-content p {
     font-size: 14px;
   }
+
   .connected-buttons {
     margin-top: 12px;
   }
