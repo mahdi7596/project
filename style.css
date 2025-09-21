@@ -623,9 +623,6 @@ footer .footer-items a {
   .workflow-section .workflow-section-content {
     width: 100%;
   }
-  .workflow-section .workflow-section-empty {
-    display: none;
-  }
 
   .tools-section {
     display: none;
@@ -660,6 +657,11 @@ footer .footer-items a {
     text-align: center;
     justify-content: center;
     font-size: 18px;
+  }
+
+  .workflow-section {
+    flex-direction: column;
+    padding-top: 44px;
   }
 }
 
